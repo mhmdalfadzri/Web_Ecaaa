@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#pinkboard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.back-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute; /* Ensure the button is positioned relative to the viewport */
+    bottom: 20px; /* Place the button 20px from the bottom */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: linear-gradient(135deg, #fad0c4, #ff9a9e);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}

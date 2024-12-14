@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website ECA Cantik</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #f9a8d4, #e8a0c9);
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .title {
+      font-size: 2.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      font-size: 4.5em;
+      font-family: 'Brush Script MT', cursive;
+      margin: 10px 0;
+    }
+
+    .description {
+      font-size: 1.5em;
+      margin: 10px 0 20px;
+    }
+
+    .image-container {
+      margin: 20px 0;
+    }
+
+    .image-container img {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .button {
+      background: linear-gradient(45deg, #ff5e99, #ff857e);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 25px;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: linear-gradient(45deg, #ff857e, #ff5e99);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Website</div>
+    <div class="subtitle">ECA</div>
+    <div class="description">Cantik</div>
+    <div class="image-container">
+      <img src="img1.png" alt="ECA Cantik">
+    </div>
+    <a href="index2.html">
+      <button class="button">Klik</button>
+    </a>
+  </div>
+</body>
+</html>

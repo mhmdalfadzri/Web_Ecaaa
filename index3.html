@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyycia</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 30px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(135deg, #fad0c4, #ff9a9e);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img5.png" alt="Keyycia">
+        <footer>
+            <a href="index2.html" class="back-btn" onclick="window.history.back()">Kembali</a>
+        </footer>
+    </div>
+</body>
+</html>
